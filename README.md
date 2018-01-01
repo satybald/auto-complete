@@ -13,9 +13,11 @@ The project runs until users submit non empty line.
 
 ## Optional questions
 >>> What would you change if the list of keywords was large (several millions)?
+
 I would compress Trie, and merge the common branches which should reduce memory foot print and gain performance speedup.
 
 >>> What would you change if the requirements were to match any portion of the keywords?
+
 I would use [Aho–Corasick algorithm](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm) which is Trie + regular automata to build a tree and do a partial match on the input keywords.
 
 ## Installing
